@@ -6,7 +6,7 @@
 #    By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/16 15:26:58 by pramos-m          #+#    #+#              #
-#    Updated: 2023/08/16 15:27:32 by pramos-m         ###   ########.fr        #
+#    Updated: 2023/08/17 15:48:37 by pramos-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,7 +14,7 @@ NAME = Fixed
 SRC_DIR = src
 INC_DIR = inc
 
-SRC = $(SRC_DIR)/main.cpp $(SRC_DIR)/Fixed.cpp
+SRC = $(SRC_DIR)/main.cpp $(SRC_DIR)/ClapTrap.cpp
 OBJ = $(SRC:.cpp=.o)
 CC = g++
 RM = rm -f
