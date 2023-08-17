@@ -3,18 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eralonso <eralonso@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/07 12:37:03 by eralonso          #+#    #+#             */
-/*   Updated: 2023/07/09 13:33:34 by eralonso         ###   ########.fr       */
+/*   Updated: 2023/08/17 16:29:21 by pramos-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	<iostream>
 #include	<iomanip>
-#include	"ClapTrap.hpp"
-#include	"ScavTrap.hpp"
-#include	"FragTrap.hpp"
+#include	"../inc/ClapTrap.hpp"
+#include	"../inc/ScavTrap.hpp"
+#include	"../inc/FragTrap.hpp"
 
 #define FILL	40
 

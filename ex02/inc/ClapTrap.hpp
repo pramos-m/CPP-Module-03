@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/05 11:11:01 by eralonso          #+#    #+#             */
-/*   Updated: 2023/08/16 15:27:45 by pramos-m         ###   ########.fr       */
+/*   Created: 2023/08/16 15:25:16 by pramos-m          #+#    #+#             */
+/*   Updated: 2023/08/17 16:22:44 by pramos-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ class ClapTrap
 			unsigned int aDmg );
 		~ClapTrap( void );
 		ClapTrap&				operator=( const ClapTrap& clap );
-		virtual void			attack( const std::string& target );
+		void					attack( const std::string& target );
 		void					takeDamage( unsigned int amount );
 		void					beRepaired( unsigned int amount );
 		// Getters

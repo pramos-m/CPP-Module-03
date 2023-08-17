@@ -1,17 +1,17 @@
-	/* ************************************************************************** */
+/* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eralonso <eralonso@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/07 13:46:50 by eralonso          #+#    #+#             */
-/*   Updated: 2023/07/07 14:02:25 by eralonso         ###   ########.fr       */
+/*   Created: 2023/08/16 15:26:45 by pramos-m          #+#    #+#             */
+/*   Updated: 2023/08/17 16:20:14 by pramos-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include	<iostream>
-#include	"ScavTrap.hpp"
+#include	"../inc/ScavTrap.hpp"
 
 ScavTrap::ScavTrap( void ): ClapTrap( "Unnamed", ScavTrap::def_hpts, ScavTrap::def_epts, ScavTrap::def_admg )
 {
@@ -74,3 +74,4 @@ std::ostream&	operator<<( std::ostream& out, ScavTrap& scav )
 		<< " Energy Points: " << scav.getEPts() << " Attack Damage: " << scav.getADmg();
 	return ( out );
 }
+

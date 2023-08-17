@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   FragTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eralonso <eralonso@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 14:51:24 by eralonso          #+#    #+#             */
-/*   Updated: 2023/07/09 10:58:30 by eralonso         ###   ########.fr       */
+/*   Updated: 2023/08/17 16:29:26 by pramos-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"FragTrap.hpp"
+#include	"../inc/FragTrap.hpp"
 
 FragTrap::FragTrap( void ): ClapTrap( "Unnamed", FragTrap::def_hpts, FragTrap::def_epts, FragTrap::def_admg )
 {

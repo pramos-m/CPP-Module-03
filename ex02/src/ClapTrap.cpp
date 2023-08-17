@@ -3,15 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.cpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eralonso <eralonso@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/07/05 11:10:59 by eralonso          #+#    #+#             */
-/*   Updated: 2023/07/09 11:38:43 by eralonso         ###   ########.fr       */
+/*   Created: 2023/08/16 15:25:08 by pramos-m          #+#    #+#             */
+/*   Updated: 2023/08/17 15:52:12 by pramos-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include	"ClapTrap.hpp"
+
 #include	<iostream>
+#include	"../inc/ClapTrap.hpp"
 
 ClapTrap::ClapTrap( void ): _name( "Unnamed" ), _hPts( 10 ), _ePts( 10 ), _aDmg( 0 )
 {
@@ -44,17 +45,16 @@ ClapTrap::~ClapTrap( void )
 ClapTrap&	ClapTrap::operator=( const ClapTrap& clap )
 {
 	std::cout << "ClapTrap -> " << clap.getName() << ": Assignation operator called" << std::endl;
-	this->setName( clap.getName() );
-	this->setHPts( clap.getHPts() );
-	this->setEPts( clap.getEPts() );
-	this->setADmg( clap.getADmg() );
+	this->setName(clap.getName());
+	this->setHPts(clap.getHPts());
+	this->setEPts(clap.getEPts());
+	this->setADmg(clap.getADmg());
 	return ( *this );
 }
 
 void	ClapTrap::attack( const std::string& target )
 {
 	unsigned int	damage;
-
 	std::cout << "ClapTrap -> " << this->getName() << ": ";
 	if ( this->getEPts() < 1 )
 		std::cout << "Not enough energy points to attack, at least 1.";
@@ -64,8 +64,8 @@ void	ClapTrap::attack( const std::string& target )
 	{
 		damage = this->getADmg();
 		std::cout << "Attacks " << target \
-			<< ", causing " << damage << " points damage!";
-		this->setEPts( this->getEPts() - 1 );
+		<< ", causing " << damage << " points damage!";
+		this->setEPts(this->getEPts() - 1);
 	}
 	std::cout << std::endl;
 }
@@ -75,13 +75,13 @@ void	ClapTrap::beRepaired( unsigned int amount )
 	std::cout << "ClapTrap -> " << this->getName() << ": ";
 	if ( this->getEPts() < 1 )
 		std::cout << "Not enough energy points to reapir, at least 1.";
-	else if ( this->getHPts() < 1 )
+	else if (this->getHPts() < 1 )
 		std::cout << "Not enough hit points to attack, at least 1.";
-	else if ( amount + this->getHPts() >= this->getHPts() )
+	else if (amount + this->getHPts() >= this->getHPts())
 	{
 		std::cout << "Be repaired with " << amount << " hit points. Hit points remaining == ";
 		this->setHPts( this->getHPts() + amount );
-		this->setEPts( this->getEPts() - 1 );
+		this->setEPts(this->getEPts() - 1);
 		std::cout << this->getHPts();
 	}
 	else
@@ -94,14 +94,13 @@ void	ClapTrap::takeDamage( unsigned int amount )
 	std::cout << "ClapTrap -> " << this->getName() << ": ";
 	if ( this->getHPts() < 1 )
 		std::cout << "Cannot take more damage. Hit points == " << this->getHPts();
-	else if ( this->getHPts()  - amount <= this->getHPts() )
+	else if (this->getHPts() - amount <= this->getHPts())
 	{
 		std::cout << "Take " << amount << " damage. Hit points remaining == ";
 		this->setHPts( this->getHPts() - amount );
-		std::cout << this->getHPts();
-	}
+		std::cout << this->getHPts();	}
 	else
-		std::cout << "Too many hit points to take damage";		
+		std::cout << "Too many hit points to take damage";	
 	std::cout << std::endl;
 }
 
