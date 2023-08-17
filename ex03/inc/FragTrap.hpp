@@ -6,7 +6,7 @@
 /*   By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/07/08 14:36:43 by eralonso          #+#    #+#             */
-/*   Updated: 2023/08/17 16:44:32 by pramos-m         ###   ########.fr       */
+/*   Updated: 2023/08/17 17:45:28 by pramos-m         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 # include	<string>
 # include	"ClapTrap.hpp"
 
-class FragTrap: public ClapTrap
+class FragTrap: virtual public ClapTrap
 {
 	protected:
 		static const int	def_hpts = 100;
