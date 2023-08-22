@@ -6,11 +6,11 @@
 #    By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/16 15:26:58 by pramos-m          #+#    #+#              #
-#    Updated: 2023/08/17 16:26:01 by pramos-m         ###   ########.fr        #
+#    Updated: 2023/08/22 13:32:00 by pramos-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Fixed
+NAME = ScavTrap
 SRC_DIR = src
 INC_DIR = inc
 

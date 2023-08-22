@@ -6,11 +6,11 @@
 #    By: pramos-m <pramos-m@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2023/08/16 15:26:58 by pramos-m          #+#    #+#              #
-#    Updated: 2023/08/17 15:48:37 by pramos-m         ###   ########.fr        #
+#    Updated: 2023/08/22 13:29:36 by pramos-m         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-NAME = Fixed
+NAME = ClapTrap
 SRC_DIR = src
 INC_DIR = inc
 
